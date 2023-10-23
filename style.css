@@ -1,0 +1,291 @@
+/*COLORS
+GREEN: #6aa84f
+BLUE: #3c78d8
+BROWN: #7c655a
+LIGHT PURPLE: #b292ac
+LIGHT BLUE: #a7cae5
+LIGHT GREEN: #9fb292
+
+*/
+
+/*fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Autour+One&family=Dela+Gothic+One&family=Nunito:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+
+body{
+	/*margin: 0;
+	padding: 0;*/
+	overflow: hidden;
+}
+
+/*hyperlink customization*/
+a {
+	text-decoration: none;
+	color: black;
+}
+
+.specialLink{
+	text-decoration: underline;
+}
+.navItem:hover{
+	color: #607c5a;
+}
+
+/*bar properties*/
+.topBar{
+	display: flex;
+	width: 99vw;
+	flex-direction: row;
+	justify-content: flex-end;
+	padding-top: 20px;
+	box-sizing: border-box;
+}
+
+
+.currentLevel{
+/*	color: #ffd966;*/
+	font-family: Autour One;
+	text-decoration: none;
+}
+
+.rightBar{
+	margin-right: 10px;
+	font-family: Autour One;
+
+}
+
+
+.leftBar {
+    margin-right: auto;
+    margin-left: 10px;
+    font-family: 'Dela Gothic One', sans-serif;
+     color: #9fb292;;
+}
+
+
+
+/*FIRST PAGE FRONT */
+
+.frontPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+/*    background: url('your-image.jpg') center center;*/
+    background-size: cover;
+}
+
+.websiteTitle {
+	font-family: 'Dela Gothic One', sans-serif;
+    font-size: 5.7vmax;
+/*    position: fixed;*/
+    top: 40%;
+    color: #6aa84f;
+    padding: 5px;
+    text-align: center;
+    animation: pulse 4s infinite;
+    transition: transform 2s;
+}
+
+/*frame for pulsing trivia title and level titles*/
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1); 
+  }
+  100% {
+    transform: scale(1); 
+  }
+}
+
+.titleButton{
+	color: #a7cae5;
+	/*color: white;
+	-webkit-text-stroke: 0.6px black;*/
+	
+}
+
+/*.websiteTitle:hover{
+	font-size: 5.5vmax;
+	transform: scale(1.2);
+}*/
+
+#indexBackground{
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100vw;
+	position: fixed;
+  	z-index: -1;
+}
+
+.playButton {
+	font-family: Nunito;
+	font-size: 1.3vmax;
+/*	transform: translateY(10%);*/
+	font-weight: bold;
+    display: inline-block;
+    border: 3px #7c655a solid;
+    padding: 10px 20px;
+    transition: transform 1s;
+    background-color: white;
+}
+
+.playButton:hover{
+	font-size: 1.3vmax;
+	transform: scale(1.1);
+/*	transform: translateY(-10%);*/
+}
+
+/*QUESTION PAGES*/
+
+.questionPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 70px;
+    height: 83vh;
+}
+
+.question {
+    text-align: center;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: Lato;
+    font-weight: bold;
+    font-size: 2.8vmin;
+    color: #7c655a;
+}
+
+.answerChoices {
+    align-items: stretch;
+    justify-content: center;
+    height: 70%;
+    width: 100%;
+    margin: 20px;
+
+}
+
+.row {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 52%;
+}
+
+.answerChoices a {
+	font-size: 1.2vmax;
+    width: 100%;
+    height: 24vh;
+    padding: 3px;
+    margin: 2vh;
+    border: 4px solid #7c655a;
+    box-sizing: content-box;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Autour One;
+    transition: transform 0.3s;
+}
+
+.answerChoices a:hover {
+    font-weight: bolder;
+    transform: scale(1.2);
+
+}
+
+.answerChoices p {
+    margin: 0;
+}
+
+/*COLORS AND PAGES FOR DIFFERENT LEVELS*/
+
+.intro a:hover{
+	border: 4px solid #9fb292;
+	color: #9fb292;
+	transform: scale(1.02);
+
+}
+
+
+.subtitle{
+	display: flex;
+	flex-direction: column;
+	font-size: 40%;
+}
+
+.level1Title{
+	color: #b39480;
+
+}
+
+.level2Title{
+	color: #b292ac;
+}
+
+.level2 a:hover{
+	border: 4px solid #b292ac;
+	color: #b292ac;
+	transform: scale(1.02);
+
+}
+
+.level3Title{
+	color: #9fb292;
+}
+
+.level3 a:hover{
+	border: 4px solid #9fb292;
+	color: #9fb292;
+	transform: scale(1.02);
+}
+
+.level4Title{
+	color: #a7cae5;
+
+}
+
+.level4 a:hover{
+	border: 4px solid #a7cae5;
+	color: #a7cae5;
+	transform: scale(1.02);
+}
+
+.level5Title{
+	color: #d74e5e;
+}
+
+.level5 a:hover{
+	border: 4px solid #d74e5e;
+	color: #d74e5e;
+	transform: scale(1.02);
+}
+
+.level6Title{
+	color:#464651;
+}
+
+/*APPEARING ANIMATION FOR PAGES*/
+
+.autoAppearContent {
+    opacity: 0;
+    animation: appear 1s forwards;
+
+}
+
+.index-autoAppearContent{
+	opacity: 0;
+    animation: appear 15s forwards;
+}
+
+@keyframes appear {
+    to {
+        opacity: 1;
+    }
+}
